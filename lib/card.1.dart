@@ -13,8 +13,29 @@ class Card1 extends StatelessWidget {
   Widget build(BuildContext context) {
     //3
     return Center(
-      //todo: card1 decorate Container
-      child: Container(),
-    );
+        //todo: card1 decorate Container
+        child: Container(
+      // 1
+      padding: const EdgeInsets.all(16),
+      // 2
+      constraints: const BoxConstraints.expand(
+        width: 350,
+        height: 450,
+      ),
+      // 3
+      decoration: const BoxDecoration(
+        //4
+        image: DecorationImage(
+          //5
+          image: NetworkImage(
+              'https://blog.123nilhas.com/wp-content/uploads/2022/12/conheca-os-lugares-com-as-melhores-vistas-do-rio-de-janeiro-conexao123.jpg'),
+          //6
+          fit: BoxFit.cover,
+        ),
+        //7
+        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      ),
+      //TODO: Adicionar uma pilha de texto
+    ));
   }
 }
