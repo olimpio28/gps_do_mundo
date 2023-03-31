@@ -33,8 +33,17 @@ class AuthorCard extends StatelessWidget {
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text(authorName, style: GpsdoMundoTheme.lightTextTheme.headline2),
               Text(title, style: GpsdoMundoTheme.lightTextTheme.headline3)
-            ])
-            // TODO: adiciona IconButton
+            ]),
+            IconButton(
+                //4
+                icon: const Icon(Icons.favorite_border),
+                iconSize: 30,
+                color: Colors.grey[400],
+                //5
+                onPressed: () {
+                  const snackBar = SnackBar(content: Text('favorite Pressed'));
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                })
           ],
         ));
   }
