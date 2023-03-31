@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'card.1.dart';
+import 'card.2.dart';
 
 class GpsdoMundoTheme {
   // 1
