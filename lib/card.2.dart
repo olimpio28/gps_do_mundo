@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'author_card.dart';
+import 'gpsdomundo_theme.dart';
 
 class Card2 extends StatelessWidget {
   const Card2({super.key});
@@ -30,8 +31,32 @@ class Card2 extends StatelessWidget {
             title: 'Software Engineer',
             imageProvider: NetworkImage(
                 'https://www.denofgeek.com/wp-content/uploads/2021/09/Anthony-Mackie.png?fit=1200%2C883'),
-          )
-          //TODO: Adicionar texto posicionado
+          ),
+          Expanded(
+              //2
+              child: Stack(children: [
+            //3
+            Positioned(
+              bottom: 16,
+              right: 16,
+              child: Text(
+                'Rio',
+                style: GpsdoMundoTheme.lightTextTheme.headline1,
+              ),
+            ),
+            //4
+            Positioned(
+              bottom: 70,
+              left: 16,
+              child: RotatedBox(
+                quarterTurns: 3,
+                child: Text(
+                  'Päo de Açucar',
+                  style: GpsdoMundoTheme.lightTextTheme.headline1,
+                ),
+              ),
+            ),
+          ])),
         ]),
       ),
     );
