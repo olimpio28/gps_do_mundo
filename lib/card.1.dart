@@ -29,7 +29,7 @@ class Card1 extends StatelessWidget {
           image: DecorationImage(
             //5
             image: NetworkImage(
-                'https://blog.123nilhas.com/wp-content/uploads/2022/12/conheca-os-lugares-com-as-melhores-vistas-do-rio-de-janeiro-conexao123.jpg'),
+                'https://blog.123nilhas.com/wp-content/uploads/2022/12/conheca-os-lugares-com-as-melhores-,vistas-do-rio-de-janeiro-conexao123.jpg'),
             //6
             fit: BoxFit.cover,
           ),
@@ -40,15 +40,31 @@ class Card1 extends StatelessWidget {
           Text(
             category,
             style: GpsdoMundoTheme.darkTextTheme.bodyText1,
+          ), //9
+          Positioned(
+            top: 20,
+            child: Text(
+              title,
+              style: GpsdoMundoTheme.darkTextTheme.headline2,
+            ),
           ),
-          Text(title, style: GpsdoMundoTheme.darkTextTheme.headline5),
-          Text(
-            description,
-            style: GpsdoMundoTheme.darkTextTheme.bodyText1,
+          //10
+          Positioned(
+            bottom: 30,
+            right: 0,
+            child: Text(
+              description,
+              style: GpsdoMundoTheme.darkTextTheme.bodyText1,
+            ),
           ),
-          Text(
-            tourist,
-            style: GpsdoMundoTheme.darkTextTheme.bodyText1,
+          //1
+          Positioned(
+            bottom: 10,
+            right: 0,
+            child: Text(
+              tourist,
+              style: GpsdoMundoTheme.darkTextTheme.bodyText1,
+            ),
           )
         ]),
       ),
