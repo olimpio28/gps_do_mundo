@@ -23,7 +23,7 @@ class Card3 extends StatelessWidget {
             child: Stack(
               children: [
                 //TODO: Adicionar um BoxDecoration com sobreposição escura
-                //TODO: Adiconar um Container, Column, Icon e Texto
+                const Card3(),
                 //TODO: Adiconar um Widget Center com filhos do widget chip
               ],
             )));
