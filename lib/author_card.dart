@@ -17,7 +17,32 @@ class AuthorCard extends StatelessWidget {
   //2
   @override
   Widget build(BuildContext context) {
-    //TODO: Substitua return container(...) por...
+    Container(
+      //3
+      padding: const EdgeInsets.all(16),
+      //4
+      child: Column(
+        //5
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          //6
+          const Icon(
+            Icons.book,
+            color: Colors.white,
+            size: 40,
+          ),
+          //7
+          const SizedBox(height: 8),
+          //8
+          Text(
+            'Guia Turistico',
+            style: GpsdoMundoTheme.darkTextTheme.headline2,
+          ),
+          //9
+          const SizedBox(height: 30),
+        ],
+      ),
+    );
     return Container(
         padding: const EdgeInsets.all(16),
         //1

@@ -22,9 +22,52 @@ class Card3 extends StatelessWidget {
             ),
             child: Stack(
               children: [
-                //TODO: Adicionar um BoxDecoration com sobreposição escura
                 const Card3(),
-                //TODO: Adiconar um Widget Center com filhos do widget chip
+                Container(
+                  decoration: BoxDecoration(
+                    //1
+                    color: Colors.black.withOpacity(0.6),
+                    //2
+                    borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                  ),
+                ),
+                Center(
+                    //11
+                    child: Wrap(
+                  //12
+                  alignment: WrapAlignment.start,
+                  //13
+                  spacing: 12,
+                  //14
+                  runSpacing: 12,
+                  //15
+                  children: [
+                    Chip(
+                      label: Text('Natureza',
+                          style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                      backgroundColor: Colors.black.withOpacity(0.7),
+                      onDeleted: () {
+                        log('delete');
+                      },
+                    ),
+                    Chip(
+                      label: Text('Agua',
+                          style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                      backgroundColor: Colors.black.withOpacity(0.7),
+                      onDeleted: () {
+                        log('deleted');
+                      },
+                    ),
+                    Chip(
+                      label: Text('Arquitetura',
+                          style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                      backgroundColor: Colors.black.withOpacity(0.7),
+                      onDeleted: () {
+                        log('deleted');
+                      },
+                    ),
+                  ],
+                ))
               ],
             )));
   }
