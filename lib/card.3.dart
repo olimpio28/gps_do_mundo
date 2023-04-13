@@ -15,7 +15,7 @@ class Card3 extends StatelessWidget {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
-                    'https://upload.wikimedia.org/wikipedia/commons/3/3a/Parque_Lage_RJ.jpg'),
+                    'https://http2.mlstatic.com/D_NQ_NP_924425-MLB32732311645_112019-O.jpg'),
                 fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.all(Radius.circular(10.0)),

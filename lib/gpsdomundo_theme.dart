@@ -9,7 +9,7 @@ class GpsdoMundoTheme {
     bodyText1: GoogleFonts.openSans(
       fontSize: 14.0,
       fontWeight: FontWeight.w700,
-      color: Colors.black,
+      color: Color(0xff010305),
     ),
     headline1: GoogleFonts.openSans(
       fontSize: 32.0,
@@ -82,7 +82,7 @@ class GpsdoMundoTheme {
         backgroundColor: Colors.black,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
+        selectedItemColor: Color(0xffa8220a),
       ),
       textTheme: lightTextTheme,
     );
@@ -97,11 +97,11 @@ class GpsdoMundoTheme {
         backgroundColor: Colors.grey[900],
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        foregroundColor: Colors.white,
+        foregroundColor: Color(0xff6e4444),
         backgroundColor: Colors.green,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
+        selectedItemColor: Color(0xffd9cb09),
       ),
       textTheme: darkTextTheme,
     );
